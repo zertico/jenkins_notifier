@@ -2,6 +2,7 @@
 
 <table>
   <tr>
+    <th>BitBucket</th>
     <th>Name</th>
     <th>Endpoint</th>
     <th>Token</th>
@@ -10,16 +11,17 @@
     <th></th>
   </tr>
 
-<% @projects.each do |project| %>
-  <tr>
-    <td><%= project.name %></td>
-    <td><%= project.endpoint %></td>
-    <td><%= project.token %></td>
-    <td><%= link_to 'Show', project %></td>
-    <td><%= link_to 'Edit', edit_project_path(project) %></td>
-    <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
+  <% @projects.each do |project| %>
+      <tr>
+        <td><%= project.bitbucket %></td>
+        <td><%= project.name %></td>
+        <td><%= project.endpoint %></td>
+        <td><%= project.token %></td>
+        <td><%= link_to 'Show', project %></td>
+        <td><%= link_to 'Edit', edit_project_path(project) %></td>
+        <td><%= link_to 'Destroy', project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+  <% end %>
 </table>
 
 <br />

@@ -1,3 +1,3 @@
 class Project < ActiveRecord::Base
-  attr_accessible :endpoint, :name, :token
+  attr_accessible :bitbucket, :endpoint, :name, :token
 end
