@@ -1,3 +1,5 @@
 JenkinsNotifier::Application.routes.draw do
-  resources :projects
+  resources :projects do
+    resources :notifications, :only => [ :create ]
+  end
 end
