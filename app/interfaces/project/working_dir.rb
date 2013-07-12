@@ -5,7 +5,7 @@ class Project
     end
 
     def path
-      "#{Rails.root}/vendor/#{@project.bitbucket}"
+      "#{Rails.root}/vendor/projects/#{@project.bitbucket}"
     end
   end
 end
