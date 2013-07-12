@@ -5,4 +5,8 @@ class Project < ActiveRecord::Base
   validates :endpoint, :presence => true
   validates :name, :presence => true
   validates :token, :presence => true
+
+  def working_dir
+    @working_dir ||= WorkingDir.new(self)
+  end
 end
