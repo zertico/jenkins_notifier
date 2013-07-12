@@ -9,4 +9,8 @@ class Project < ActiveRecord::Base
   def working_dir
     @working_dir ||= WorkingDir.new(self)
   end
+
+  def remote
+    @remote ||= Remote.new(self)
+  end
 end
