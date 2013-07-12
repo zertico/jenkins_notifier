@@ -6,6 +6,8 @@ gem 'zertico'
 
 gem 'sqlite3'
 
+gem 'god'
+
 gem 'sidekiq'
 
 gem 'git'
