@@ -44,7 +44,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">JenkinsNotifier</a>
+          <%= link_to 'JenkinsNotifier', root_path, :class => 'brand' %>
           <div class="container nav-collapse">
             <ul class="nav">
             </ul>
@@ -64,6 +64,8 @@
               <h3>Sidebar</h3>
               <ul class="nav nav-list">
                 <li class="nav-header">Sidebar</li>
+                <li><%= link_to 'Projects', projects_path %></li>
+                <li><%= link_to 'New Project', new_project_path %></li>
               </ul>
             </div><!--/.well -->
           </div><!--/span-->
