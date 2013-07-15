@@ -111,6 +111,8 @@ GEM
     redis (3.0.4)
     redis-namespace (1.3.0)
       redis (~> 3.0.0)
+    responders (0.9.3)
+      railties (~> 3.1)
     sass (3.2.9)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -164,6 +166,7 @@ DEPENDENCIES
   pry
   pry-debugger
   rails (= 3.2.13)
+  responders
   sass-rails (~> 3.2.3)
   sidekiq
   sqlite3

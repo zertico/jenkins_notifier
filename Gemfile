@@ -4,6 +4,8 @@ gem 'rails', '3.2.13'
 
 gem 'zertico'
 
+gem 'responders'
+
 gem 'god'
 
 gem 'sidekiq'
