@@ -12,6 +12,8 @@ gem 'sidekiq'
 
 gem 'git'
 
+gem 'twitter-bootstrap-rails'
+
 gem 'jquery-rails'
 
 group :production do
@@ -24,6 +26,8 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
+  gem 'less-rails'
+  gem 'therubyracer'
 end
 
 group :development do
