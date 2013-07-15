@@ -15,6 +15,8 @@ gem 'jquery-rails'
 group :production do
   gem 'mysql2'
   gem 'unicorn'
+  gem 'exception_notification'
+  gem 'newrelic_rpm'
 end
 
 group :assets do
@@ -28,4 +30,5 @@ group :development do
   gem 'thin'
   gem 'pry'
   gem 'pry-debugger'
+  gem 'awesome_print'
 end
