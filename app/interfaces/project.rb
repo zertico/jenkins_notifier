@@ -13,4 +13,8 @@ class Project < ActiveRecord::Base
   def remote
     @remote ||= Remote.new(self)
   end
+
+  def build
+    @build ||= Build.new(self)
+  end
 end
