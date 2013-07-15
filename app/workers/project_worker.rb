@@ -17,6 +17,7 @@ class ProjectWorker
         if g.is_branch?(local)
           unless g.diff(local, remote).size == 0
             branchs_to_build << local
+            g.branch(local).merge(remote)
           end
         else
           g.checkout(local)
