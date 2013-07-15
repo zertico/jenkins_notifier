@@ -9,8 +9,8 @@ module ProjectsService
 
   def delete(id)
     @project = Project.find(id)
+    ProjectDestroyerWorker.perform_async(@project.id)
     @project.destroy
-    ProjectDestroyerWorker.perform_async(@project.id) if @project.frozen?
     { :project => @project }
   end
 end
