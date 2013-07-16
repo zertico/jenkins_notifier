@@ -27,8 +27,10 @@ class ProjectWorker
     end
 
     branchs_to_build.each do |branch|
-      params = { "parameter" => { "name" => "branch", "value" => "#{branch}"} }
-      Net::HTTP.post_form(@project.build.uri, params)
+      http = Net::HTTP.new(@project.build.uri.host, @project.build.uri.port)
+      request = Net::HTTP::Post.new("#{@project.build.uri.request_uri}?branch=#{branch}")
+      request.content_type = 'application/json'
+      http.request(request)
     end
   end
 end

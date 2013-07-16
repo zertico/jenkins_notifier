@@ -7,7 +7,7 @@ class Project
     end
 
     def uri
-      URI.parse("#{@project.endpoint}/#{@project.name}/build")
+      URI.parse("#{@project.endpoint}/#{@project.name}/buildWithParameters")
     end
   end
 end
