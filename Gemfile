@@ -37,3 +37,8 @@ group :development do
   gem 'pry-debugger'
   gem 'awesome_print'
 end
+
+group :test do
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
+end
