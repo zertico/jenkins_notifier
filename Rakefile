@@ -9,4 +9,4 @@ JenkinsNotifier::Application.load_tasks
 RSpec::Core::RakeTask.new
 
 desc 'Default Task'
-task :default => [ :spec ]
+task :default => [ :'db:migrate', :spec ]
